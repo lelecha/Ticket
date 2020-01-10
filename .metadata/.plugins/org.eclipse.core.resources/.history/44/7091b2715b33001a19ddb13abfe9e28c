@@ -32,7 +32,7 @@ public class SearchItem extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		// TODO Auto-generated method stub
 		
 		
 		JSONArray array = new JSONArray();
@@ -40,7 +40,7 @@ public class SearchItem extends HttpServlet {
 			array.put(new JSONObject().put("username", "abcd"));
 			array.put(new JSONObject().put("username", "1234"));
 		} catch (JSONException e) {
-			
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		RpcHelper.writeJsonArray(response, array);

@@ -32,18 +32,19 @@ public class SearchItem extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		
+		// TODO Auto-generated method stub
+		response.setContentType("application/json");
+		PrintWriter writer = response.getWriter();
 		
 		JSONArray array = new JSONArray();
 		try {
 			array.put(new JSONObject().put("username", "abcd"));
 			array.put(new JSONObject().put("username", "1234"));
 		} catch (JSONException e) {
-			
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		RpcHelper.writeJsonArray(response, array);
+		writer.print(array);
 	}
 
 	/**

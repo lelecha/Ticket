@@ -11,3 +11,6 @@ you can click the hearts to save the items you like to the "My Favorites" tab
 based on the category you liked, the "recommendation" tab will show similar events to you
 
 the database is MySql and based on Amazon RDS.
+
+
+![image](https://github.com/lelecha/Ticket/blob/master/demo_ticket.png)
